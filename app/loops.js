@@ -7,6 +7,11 @@
 
 function factorials(num) {
 
+  var sum = 1
+  for (var i = 1; i <= num; i++) {
+    sum = sum * i;
+  }
+  return sum
 }
 
 // ------------------------------------------
@@ -17,7 +22,11 @@ function factorials(num) {
 // output: 20
 
 function rangeTotal(n1, n2) {
-
+  var sum = 0
+  for (let i = n1; i <= n2; i++) {
+    sum = i + sum;
+  }
+  return sum
 }
 
 // ------------------------------------------
@@ -29,6 +38,12 @@ function rangeTotal(n1, n2) {
 // input: 15, 20, 5
 // output: 2
 
-function rangeDivisor(start, end, divisor) {
-
+// function rangeDivisor(start, end, divisor) {
+//   var count = 0
+//   var sum = 0
+//   for (let i = start; i <= end; i++) {
+//     sum = i / divisor
+//     if (Number.isInteger(sum)) { count++ };
+//   }
+//   return count
 }

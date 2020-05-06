@@ -4,9 +4,13 @@
 // output: ['is', 'a', 'split', 'sentence.', 'This']
 
 function rearranger(arr) {
+    var first = arr[0]
+    arr.shift()
+    arr.push(first)
+    return arr
+
+
 }
-
-
 // ------------------------------------------
 
 
@@ -16,6 +20,8 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
+    return Math.max(...arr)
+
 }
 
 
@@ -28,6 +34,12 @@ function largestNum(arr) {
 // output: [16, 8, 4, 28]
 
 function elemsTimesLength(arr) {
+    var sum = 0
+    for (let i = 0; i <= arr.length; i++) {
+        sum = [i] * arr.length
+    }
+    console.log(sum);
+
 }
 
 
